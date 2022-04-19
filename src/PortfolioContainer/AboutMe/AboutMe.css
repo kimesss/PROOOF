@@ -30,6 +30,10 @@
     text-align: justify;
     padding: 30px;
 }
+.about-me-navigation{
+text-align: right;
+    margin-top: 15px;
+}
 .about-me-description{
     font-size: 14px;
 }
@@ -50,7 +54,7 @@
     height: 12px;
     width: 12px;
     margin: 0 10px 0 0;
-    background-color: #ff5823;
+    background-color: #45c056;
     border-radius: 50%;
 }
 

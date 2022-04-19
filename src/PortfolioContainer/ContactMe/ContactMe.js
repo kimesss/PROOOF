@@ -6,7 +6,6 @@ import Animation from "../../utilities/Animation";
 import Typical from "react-typical";
 import {FaFacebook, FaGoogle, FaInstagram} from "react-icons/fa";
 import "./ContactMe.css"
-import axios from "axios";
 import {toast} from "react-toastify";
 import emailjs from 'emailjs-com';
 

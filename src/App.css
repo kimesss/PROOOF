@@ -18,4 +18,7 @@
   --toast-success: #0CBFAE;
   --loader-color: #0CBFAE
 }
+.App{
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+}
 

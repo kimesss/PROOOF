@@ -1,0 +1,85 @@
+.router__nav{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.router__nav:hover{
+    color: #45c056;
+}
+.full__app {
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    perspective: 500px;
+    perspective-origin: 50% calc(50% - 150px);
+
+}
+.banner {
+    display: flex;
+    transform-style: preserve-3d;
+    animation: rotate 24s infinite linear;
+}
+@keyframes rotate {
+    to {transform: rotateY(-360deg)}
+}
+$width: 50px;
+.panel {
+    position: absolute;
+    transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px);
+    width: $width;
+    height: 110px;
+//border: 1px solid white;
+    overflow: hidden;
+//background-color: #fff4;
+}
+.scene {
+    position: relative;
+    transform-style: preserve-3d;
+}
+.floor{
+    position: absolute;
+    background-image:
+            radial-gradient(rgba(253, 253, 253, 0), #000 75% ),
+            repeating-conic-gradient(from 45deg ,
+            #282525 0deg 90deg,
+            #0a0a07 90deg 180deg);
+    background-size: 100%, 100px 100px;
+    width: 100vh;
+    height: 100vh;
+    transform: rotateX(90deg) translate(-50%, -50%);
+
+}
+.circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+//background-color: rgba(224, 224, 224, 0.95);
+    background-image: radial-gradient(
+            circle at top,
+            #a6d5ec, #000 80%);
+}
+.box {
+//perspective: 300px;
+//position: absolute;
+    transform-style: preserve-3d;
+}
+
+.panel::before {
+    position: absolute;
+    content: "Hello World, it's a nice day!!!";
+    font-size: 96px;
+    width: max-content;
+    left: var(--left);
+    color: hsl(var(--hue), 50%, 65%);
+}
+@for $i from 0 to 24 {
+    .panel:nth-child(#{$i + 1}) {
+        --left: #{$width * $i * -1};
+        --hue: #{360 / 24 * $i};
+        --angle: #{360deg / 24 * $i}
+    }
+}

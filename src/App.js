@@ -1,14 +1,19 @@
 import './App.css';
-import PortfolioContainer from "./PortfolioContainer/PortfolioContainer";
-import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import HelloView from "./views/HelloView/HelloView";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import MainPageView from "./views/MainPage/MainPageView";
 
 function App() {
   return (
-    <div className="App">
-        <ToastContainer></ToastContainer>
-        <PortfolioContainer></PortfolioContainer>
-    </div>
+      <BrowserRouter>
+          <>
+              <Routes>
+                  <Route path="/" element={<MainPageView/>}/>
+                 <Route path="/css" element={<HelloView/>}/>
+              </Routes>
+      </>
+      </BrowserRouter>
   );
 }
 

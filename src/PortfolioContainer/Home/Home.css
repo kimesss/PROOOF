@@ -3,5 +3,5 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 670px;
-    background-color: #1f2235;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }

@@ -4,6 +4,7 @@ import ScrollService from "../../utilities/ScrollServiceeee";
 import Animation from "../../utilities/Animation";
 import "./AboutMe.css"
 import mee from "../../assets/AboutMe/me.jpg"
+import Navigation from "../../views/Navigation";
 
 export default function AboutMe(props){
     let fadeInScreenHandler = (screen)=>{
@@ -23,7 +24,7 @@ export default function AboutMe(props){
             bullets: [
                 "Creative frontEnd developer",
                 "webpack",
-                "JS And Htmll and CSS skils",
+                `JS And Htmll and css skils`,
                 "React",
             ],
             heading: "Here are a Few Highlights:"
@@ -61,6 +62,7 @@ export default function AboutMe(props){
                                 Hire me{" "}
                             </button>
                         </div>
+                        <Navigation/>
                     </div>
                 </div>
             </div>

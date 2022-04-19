@@ -10,7 +10,7 @@
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
-    background-color: #1f2235;
+background-image:  linear-gradient(to right, #434343 0%, black 100%);
 }
 .central-form h2{
     color: white;
@@ -44,13 +44,13 @@
     justify-content: center;
     flex-direction: column;
     margin-top: -52px;
-    background-color: white;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    /*background: transparent ;*/
     border-radius: 12px;
 }
 form p{
 text-align: center;
     margin-bottom: 10px;
-    color: #ff5823;
     letter-spacing: 0.3rem;
 }
 form label{
@@ -81,8 +81,10 @@ form button{
     padding: 5px;
     outline: none;
     width: 160px;
-    border: 2px solid #ff5823;
+    border: 2px solid #96e6a1;
+    /*border: 2px solid #ff5823;*/
     border-radius: 19px;
+    /*background-image: linear-gradient(to right, #434343 0%, black 100%);*/
     background-color: #1f2235;
     color: white;
     font-size: 18px;
@@ -91,6 +93,7 @@ form button{
 }
 form button:hover{
     background-color: #1f2235;
+
     transition: all ease 1s;
     border: 2px solid #1f2235;
 }

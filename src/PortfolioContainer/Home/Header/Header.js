@@ -59,6 +59,7 @@ export default function Header(){
                     <FaBars className="header-hamburger-bars"/>
                 </div>
                 <div className="header-logo">
+                    <span> Kamil </span>
                     <span> Andziak </span>
                 </div>
                 <div className={(showHeaderOption) ? "header-options show-hamburger-options" : "header-options"}>
