@@ -1,0 +1,25 @@
+.project{
+    /*display: flex;*/
+    overflow: hidden;
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 0 0 20px -2px #1f2235;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.photo{
+    width: 100%;
+}
+.project-description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.project-description-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.project:hover{
+    box-shadow: 0px 0px 10px 2px #96e6a1;
+}
