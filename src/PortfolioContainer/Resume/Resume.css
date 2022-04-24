@@ -1,0 +1,26 @@
+.resume-container{
+    /*min-height: 100vh;*/
+}
+.resume-container-form{
+    max-width: 1100px;
+    padding: 10px;
+    display: flex;
+    border-radius: 12px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0 0 20px -2px #1f2235;
+}
+.project{
+    /*display: flex;*/
+    overflow: hidden;
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 0 0 20px -2px #1f2235;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.map{
+    width: 100%;
+}
