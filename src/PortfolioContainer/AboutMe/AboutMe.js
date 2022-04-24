@@ -15,17 +15,22 @@ export default function AboutMe(props){
     const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
 
     const SCREEN_CONSTANTS = {
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
-            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when" +
-            " an unknown printer took a galley of type and scrambled it to make a type specimen " +
-            "book. It has survived not only five centuries, but also the leap into electronic t" +
-            "ypesetting, remaining essentially unchanged. It was popularised in the 1960s with the ",
+        description:
+            `- Additionally I am taking part in 1 yearlong MegaK bootcamp, where I am expanding my knowledge and improving my coding abilities.<br/><br/>
+                            - I was training classic canoeing for 10 years. I have been representing my club in Polish Championships and I have won some
+                            medals. <br/><br/>
+                            - I have taken part in some polish running competitions like “Złota Mila” and “Bieg Wedla”. I love sport and I am trying to incorporate
+                            it in my daily life.`,
         highlights: {
             bullets: [
-                "Creative frontEnd developer",
-                "webpack",
-                `JS And Htmll and css skils`,
+                "Creative FrontEnd developer",
+                `JavaScript`,
+                "HTML and CSS",
                 "React",
+                "Node and Express",
+                "SQL and Mongodb",
+                "New in Typescript",
+                "Webpack",
             ],
             heading: "Here are a Few Highlights:"
         }
@@ -49,7 +54,12 @@ export default function AboutMe(props){
                         <img src={mee} alt=""/>
                     </div>
                     <div className="about-me-details">
-                        <span className="about-me-description">{SCREEN_CONSTANTS.description}</span>
+                        <span className="about-me-description">
+                            - Additionally I am taking part in 1 yearlong MegaK bootcamp, where I am expanding my knowledge and improving my coding abilities.<br/><br/>
+                            - I was training classic canoeing for 10 years. I have been representing my club in Polish Championships and I have won some
+                            medals. <br/><br/>
+                            - I have taken part in some polish running competitions like “Złota Mila” and “Bieg Wedla”. I love sport and I am trying to incorporate
+                            it in my daily life. </span>
                         <div className="about-me-highlights">
                             <div className="highlights-heading">
                                 <span>{SCREEN_CONSTANTS.highlights.heading}</span>
